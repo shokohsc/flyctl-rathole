@@ -1,0 +1,59 @@
+app = "rathole"
+
+[[services]]
+  internal_port = 25
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "25"
+
+[[services]]
+  internal_port = 80
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = []
+    port = "80"
+
+[[services]]
+  internal_port = 443
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["tls"]
+    port = "443"
+
+[[services]]
+  internal_port = 41194
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "41194"
+
+[[services]]
+  internal_port = 41194
+  protocol = "udp"
+
+  [[services.ports]]
+    port = "41194"
+
+[[services]]
+  internal_port = 25565
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "25565"
+
+[[services]]
+  internal_port = 19132
+  protocol = "udp"
+
+  [[services.ports]]
+    port = "19132"
+
+[[services]]
+  internal_port = 42333
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "42333"
