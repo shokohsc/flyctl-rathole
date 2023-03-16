@@ -1,14 +1,14 @@
 app = "rathole"
 
 [[services]]
-  internal_port = 25
+  internal_port = 40025
   protocol = "tcp"
 
   [[services.ports]]
     port = "25"
 
 [[services]]
-  internal_port = 80
+  internal_port = 40080
   protocol = "tcp"
 
   [[services.ports]]
@@ -17,7 +17,7 @@ app = "rathole"
     force_https = false
 
 [[services]]
-  internal_port = 443
+  internal_port = 40443
   protocol = "tcp"
 
   [[services.ports]]
@@ -64,3 +64,6 @@ app = "rathole"
     interval = "30s"
     restart_limit = 2
     timeout = "5s"
+
+[env]
+  RUST_LOG = "debug"

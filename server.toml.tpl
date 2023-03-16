@@ -3,12 +3,12 @@ bind_addr = "0.0.0.0:42333"
 default_token = "%DEFAULT_TOKEN%"
 
 [server.services.smtp]
-bind_addr = "0.0.0.0:25"
+bind_addr = "0.0.0.0:40025"
 
 [server.services.http]
-bind_addr = "0.0.0.0:80"
+bind_addr = "0.0.0.0:40080"
 [server.services.https]
-bind_addr = "0.0.0.0:443"
+bind_addr = "0.0.0.0:40443"
 
 [server.services.openvpn-udp]
 bind_addr = "0.0.0.0:41194"
