@@ -12,8 +12,9 @@ app = "rathole"
   protocol = "tcp"
 
   [[services.ports]]
-    handlers = []
+    handlers = ["http"]
     port = "80"
+    force_https = false
 
 [[services]]
   internal_port = 443
@@ -57,3 +58,9 @@ app = "rathole"
 
   [[services.ports]]
     port = "42333"
+
+  [[services.tcp_checks]]
+    grace_period = "10s"
+    interval = "30s"
+    restart_limit = 2
+    timeout = "5s"
