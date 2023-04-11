@@ -16,8 +16,8 @@ type = "udp"
 [server.services.openvpn-tcp]
 bind_addr = "0.0.0.0:41194"
 
-[server.services.minecraft-java]
-bind_addr = "0.0.0.0:25565"
 [server.services.minecraft-bedrock]
 bind_addr = "fly-global-services:19132"
 type = "udp"
+[server.services.minecraft-java]
+bind_addr = "0.0.0.0:25565"
