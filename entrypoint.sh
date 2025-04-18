@@ -13,4 +13,4 @@ log "editing server toml"
 sed 's/%DEFAULT_TOKEN%/'"${DEFAULT_TOKEN}"'/g' server.toml.tpl > server.toml
 
 log "starting rathole"
-./rathole --server server.toml
+/usr/bin/frps -c server.toml
