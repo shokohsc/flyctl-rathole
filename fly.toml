@@ -7,50 +7,40 @@ app = "rathole"
   [[services.ports]]
     port = "25"
 
-[[services]]
-  internal_port = 40080
-  protocol = "tcp"
+# [[services]]
+#   internal_port = 25565
+#   protocol = "tcp"
 
-  [[services.ports]]
-    handlers = ["http"]
-    port = "80"
-    force_https = false
+#   [[services.ports]]
+#     port = "25565"
 
-[[services]]
-  internal_port = 40443
-  protocol = "tcp"
+# [[services]]
+#   internal_port = 19132
+#   protocol = "udp"
 
-  [[services.ports]]
-    handlers = ["tls"]
-    port = "443"
+#   [[services.ports]]
+#     port = "19132"
 
-[[services]]
-  internal_port = 41194
-  protocol = "tcp"
+# [[services]]
+#   internal_port = 41194
+#   protocol = "tcp"
 
-  [[services.ports]]
-    port = "41194"
+#   [[services.ports]]
+#     port = "41194"
 
-[[services]]
-  internal_port = 41194
-  protocol = "udp"
+# [[services]]
+#   internal_port = 40443
+#   protocol = "tcp"
 
-  [[services.ports]]
-    port = "41194"
+#   [[services.ports]]
+#     port = "443"
 
-[[services]]
-  internal_port = 25565
-  protocol = "tcp"
+# [[services]]
+#   internal_port = 41194
+#   protocol = "udp"
 
-  [[services.ports]]
-    port = "25565"
-
-[[services]]
-  internal_port = 19132
-  protocol = "udp"
-
-  [[services.ports]]
-    port = "19132"
+#   [[services.ports]]
+#     port = "41194"
 
 [[services]]
   internal_port = 42333
@@ -66,4 +56,4 @@ app = "rathole"
     timeout = "5s"
 
 [env]
-  RUST_LOG = "debug"
+  RUST_LOG = "trace"
